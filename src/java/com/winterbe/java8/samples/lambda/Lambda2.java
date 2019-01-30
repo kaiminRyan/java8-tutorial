@@ -25,7 +25,9 @@ public class Lambda2 {
         Integer converted1 = integerConverter1.convert("123");
         System.out.println(converted1);   // result: 123
 
-
+        Converter<String,Long> longConverter=Long::valueOf;
+        Long aLong = longConverter.convert("111");
+        System.out.println(aLong);
         // method reference
 
         Converter<String, Integer> integerConverter2 = Integer::valueOf;
@@ -43,5 +45,6 @@ public class Lambda2 {
 
         PersonFactory<Person> personFactory = Person::new;
         Person person = personFactory.create("Peter", "Parker");
+        System.out.println(person);
     }
 }

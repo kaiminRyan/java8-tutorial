@@ -44,6 +44,11 @@ public class Lambda1 {
         Optional.ofNullable(names3).ifPresent(list -> list.sort(Comparator.naturalOrder()));
 
         System.out.println(names3);
+
+
+        names.sort((a,b)->a.compareToIgnoreCase(b));
+        System.out.println(names);
+
     }
 
 }

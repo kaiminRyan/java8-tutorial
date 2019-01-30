@@ -1,3 +1,4 @@
+/*
 package com.winterbe.java11;
 
 import java.util.ArrayList;
@@ -35,3 +36,4 @@ public class LocalVariableSyntax {
     void someMethod() {}
 
 }
+*/
